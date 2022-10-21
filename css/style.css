@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: black;
+}
+
+h1{
+    margin-bottom: 2rem;
+}
+
+p{
+    margin-bottom: 1.5rem;
+}
+
+header {
+    background: linear-gradient(to bottom,black,transparent);
+    color: black;
+    height: 90px;
+    padding: 0%;
+    position: fixed;
+    left: 0;
+    right: 14.5px;
+    top: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    padding: 1rem;
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    transition: all 0.1s linear;
+}
+
+.logo:hover{
+    letter-spacing: .5rem;
+    font-size: 2.3rem;
+    transition: all 0.1s linear;
+}
+
+.container {
+    width: 85%;
+    margin: 0;
+    background: rgba(0, 0, 0, 0);
+}
+.container2 {
+    width: 85%;
+    margin: 3rem;
+    padding: 2rem;
+    background: antiquewhite;
+    box-shadow: 2rem;
+    
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    display: block;
+    padding-inline: .5rem 1rem;
+    border-radius: 20px;
+}
+nav ul li a:hover {
+    font-size: 1.9rem;
+    transition: all 0.1s linear;
+}
+
+main{
+  scroll-snap-type: y mandatory;
+  overflow-y:scroll;
+  height:100vh;
+
+}
+
+section{
+  scroll-snap-align:start;
+  height:100vh;
+  background:rgb(29, 29, 29);;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
